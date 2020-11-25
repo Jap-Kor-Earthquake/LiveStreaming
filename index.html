@@ -1,0 +1,18 @@
+<script src="/jwplayer7/jwplayer.js"></script>
+<script>jwplayer.key='iiL9xxalkP7di2nLZ3tPLw0NLBCHdHBe8i3QDQ==';</script>  
+<div id="mediaplayer"></div>
+<script>
+jwplayer('mediaplayer').setup({
+width: "100%",
+height: "406",
+primary: "flash",
+autostart: "true",
+//repeat: 'always',
+androidhls:true,
+aspectratio: "16:9",
+sources:[
+{	file: "rtmp://서버주소/hls/test"},
+{	file: "http://서버주소/hls/test.m3u8"}
+]
+ });
+</script>
